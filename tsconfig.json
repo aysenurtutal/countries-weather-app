@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "lib": ["dom", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "global.d.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
